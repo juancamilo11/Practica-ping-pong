@@ -15,21 +15,29 @@ let ball = new Ball(250,100,6,board);
 
 
 document.addEventListener('keydown',function(e){
-   e.preventDefault();
-   console.log(e.key);
    if(e.key == 'w'){
       bar1.up();
       controller();
    } else if(e.key == 's'){
+      e.preventDefault();
       bar1.down();
    } else if(e.key == 'ArrowUp'){
+      e.preventDefault();
       bar2.up();
    } else if(e.key == 'ArrowDown'){
+      e.preventDefault();
       bar2.down();
+   } else if(e.key == 'ArrowDown'){
+      e.preventDefault();
+      bar2.down();
+   } else if(e.key == " "){
+      e.preventDefault();
+      board.playing = !board.playing;
    }
 });
 
-//window.addEventListener('load',main);
+boardView.draw();
+
 
 window.requestAnimationFrame(controller);
 

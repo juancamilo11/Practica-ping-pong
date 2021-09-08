@@ -7,6 +7,7 @@ export class Board {
          this.gameOver = false;
          this.bars = [];
          this.ball = null;
+         this.playing = false;
       }
 
       get getWidth(){
