@@ -34,8 +34,8 @@ export class Board {
       }
 
       get elements() {
-         let elements = this.bars;
-         //elements.push(this.ball);
+         let elements = this.bars.map(elem => elem);
+         elements.push(this.ball);
          return elements;
       }
 }

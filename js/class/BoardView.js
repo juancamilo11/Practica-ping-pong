@@ -29,6 +29,13 @@ export class BoardView {
             case 'rectangle':
                this.ctx.fillRect(element.x,element.y,element.width,element.height);
                break;
+            case 'circle':
+               this.ctx.beginPath();
+               this.ctx.arc(element.x,element.y,element.radius,0,7);
+               this.ctx.fill();
+               this.ctx.closePath();
+               break;
+                  
             default:
                break;
          }
@@ -38,5 +45,10 @@ export class BoardView {
    
    clean() {
       this.ctx.clearRect(0,0,this.board.width,500);
+   }
+   
+   play() {
+      this.clean();
+      this.draw();
    }
 }

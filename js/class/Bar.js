@@ -10,7 +10,7 @@ export class Bar {
 
       this.kind = 'rectangle';
 
-      this.speed=10;
+      this.speed=7;
    }
 
    down() { 
