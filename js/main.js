@@ -11,25 +11,29 @@ let bar1 = new Bar(10,60,10,30,board);
 let bar2 = new Bar(480,60,10,30,board);
 let boardView = new BoardView(canvas,board);
 
+
+
 document.addEventListener('keydown',function(e){
+   e.preventDefault();
    console.log(e.key);
    if(e.key == 'w'){
       bar1.up();
-      console.log(bar1);
+      controller();
    } else if(e.key == 's'){
       bar1.down();
-      console.log(bar1);
    } else if(e.key == 'ArrowUp'){
       bar2.up();
-      console.log(bar2);
    } else if(e.key == 'ArrowDown'){
       bar2.down();
-      console.log(bar2);
    }
 });
 
-window.addEventListener('load',main);
+//window.addEventListener('load',main);
 
-function main() {
+window.requestAnimationFrame(controller);
+
+function controller() {
+   boardView.clean();
    boardView.draw();
+   window.requestAnimationFrame(controller);
 }
