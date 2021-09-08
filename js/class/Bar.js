@@ -9,13 +9,19 @@ export class Bar {
       this.board.bars.push(this);
 
       this.kind = 'rectangle';
+
+      this.speed=10;
    }
 
-   down() { //linea 31 parece que se equivocó
-
+   down() { 
+      this.y += this.speed;
    }
 
    up(){
+      this.y -= this.speed;
+   }
 
+   toString() {
+      return "x: " + this.x + " y: " + this.y;
    }
 }
