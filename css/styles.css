@@ -1,0 +1,71 @@
+body {
+   background-color: #345B63;
+   font-family: 'JetBrains Mono',
+   monospace;
+}
+
+h1 {
+   font-weight: 900;
+   font-size: 2.5em;
+}
+
+.titulo-pagina {
+   text-align: center;
+}
+
+#canvas {
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-top: 30px;
+   border:4px solid black;
+   width: 80%;
+   height: 60vh;
+   background-color: #BFD8B8;
+}
+
+.game-control{
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   width: 100%;
+}
+
+#puntuacion-jugador-A,
+#puntuacion-jugador-B {
+   text-align: center;
+   font-size: 1.2em;
+   font-weight: 500;
+}
+
+.score-A,
+.score-B {
+   font-size: 1.5em;
+   font-weight: 700;
+}
+
+.button-container {
+   display: flex;
+   justify-content: center;
+}
+
+.puntuacion {
+   width: 30%;
+   height: 50px;
+}
+
+#btn-reiniciar {
+   height: 80%;
+   align-self: center;
+   border-radius: 5px;
+   border: 1px solid black;
+   color:black;
+   font-weight: 600;
+   background-color: antiquewhite;
+}
+
+#btn-reiniciar:hover {
+   cursor: pointer;
+   background-color:bisque;
+   border: 2px solid black;
+}
