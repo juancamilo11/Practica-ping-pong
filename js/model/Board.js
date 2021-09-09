@@ -1,8 +1,8 @@
 export class Board {
       
-      constructor(width, heiht) {
+      constructor(width, height) {
          this.width = width;
-         this.heiht = heiht;
+         this.height = height;
          this.playing = false;
          this.gameOver = false;
          this.bars = [];
