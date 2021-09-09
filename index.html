@@ -13,13 +13,17 @@
 <body>
    <h1 class="titulo-pagina">Ping-Pong JavaScript</h1>
    <div class="game-control">
-      <div class="puntuacion" id="puntuacion-jugador-A">Puntuación Juegador #1<br><span class="score-A"> 0 Puntos</span></div>
+      <div class="puntuacion" id="puntuacion-jugador-A">Puntuación Juegador #1<br><span id="score-A">0</span> Puntos</div>
       <div class="puntuacion button-container">
          <button id="btn-reiniciar">Reiniciar Juego</button>
       </div>
-      <div class="puntuacion" id="puntuacion-jugador-B">Puntuación Juegador #2<br><span class="score-B"> 0 Puntos</span></div>
+      <div class="puntuacion" id="puntuacion-jugador-B">Puntuación Juegador #2<br><span id="score-B">0</span> Puntos</div>
    </div>  
    <canvas id="canvas"></canvas>
+   <div class="footer">
+      <p>Juan Camilo Cardona Calderón</p>
+      <p>Sofka U - Curso: Introducción al Desarrollo de Software  </p>
+   </div>
    <script src="./js/controller/main.js" type="module"></script>
 </body>
 </html>
