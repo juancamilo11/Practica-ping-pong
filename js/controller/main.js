@@ -47,3 +47,9 @@ function controller() {
    window.requestAnimationFrame(controller);
 }
 
+let botonIniciar = document.getElementById('btn-jugar');
+botonIniciar.addEventListener('click',function iniciarJuego(e) {
+   let modal = document.querySelector('.modal-container');
+   modal.classList.add('hide');
+})
+
