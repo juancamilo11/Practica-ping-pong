@@ -1,4 +1,7 @@
 # Practica-ping-pong
+
+IMPORTANTE: Enlace a GitHub pages para visualizar la aplicación corriendo en el navegador: https://juancamilo11.github.io/Practica-ping-pong/
+
 ##Lista de preguntas referentes a JavaScript
 
 ---
